@@ -40,7 +40,7 @@ body {
 }
 
 /* hover nav */
-.hover-nav > img {
+.hover-nav {
     height: auto;
     width:3vw;
 }
@@ -50,9 +50,28 @@ body {
 }
 
 #hover-nav:hover {
-    display:none
+    /* display:none */
 }
 
 #hover-nav-option:hover {
     display: flex;
+}
+
+.dropdown-toggle {
+    border: none;
+    background-color: #d6363300;
+}
+
+.dropdown-menu {
+    border: none;
+    background-color: #d6363300;
+}
+
+.dropdown-item {
+    /* margin-left: auto; */
+}
+
+.dropdown-item:hover {
+    background-color: rgba(147, 0, 0, 0) !important; 
+    scale: 107%;
 }
