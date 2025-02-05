@@ -1,6 +1,10 @@
 
 body {
-    background-color: bisque;
+    background-color: bisque    ;
+}
+
+.bg-primary {
+    background-color: #D63633 !important;
 }
 
 /* dark mode */
@@ -9,3 +13,15 @@ body {
     width: 500px;
     background-color: red;
 }
+
+/* footer */
+#footer {
+    /* background-color: #D63633; */
+}
+
+/* background-image */
+#background-image {
+    height: auto;
+    width: 110vw;
+}
+
