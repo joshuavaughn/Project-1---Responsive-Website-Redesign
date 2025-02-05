@@ -1,6 +1,6 @@
 
 body {
-    background-color: bisque    ;
+    /* background-color: bisque    ; */
 }
 
 .bg-primary {
@@ -19,9 +19,40 @@ body {
     /* background-color: #D63633; */
 }
 
+#hero-page {
+    height: 100vh;
+}
+
 /* background-image */
 #background-image {
-    height: auto;
+    height: 110vh;
     width: 110vw;
 }
 
+#hero-page-logo {
+    height: auto;
+    width: 5vw;
+}
+
+.image {
+    width: auto;
+    height: 20vw;
+}
+
+/* hover nav */
+.hover-nav > img {
+    height: auto;
+    width:3vw;
+}
+
+.hover-nav > img:hover {
+    scale: 120%;
+}
+
+#hover-nav:hover {
+    display:none
+}
+
+#hover-nav-option:hover {
+    display: flex;
+}
