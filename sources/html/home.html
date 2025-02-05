@@ -21,27 +21,29 @@
 
 <body>
     <header>
-        <div class="nav-fluid d-flex flex-column position-fixed sticky-bottom end-0 m-2 hover-nav"
+        <div class="nav-fluid d-none flex-column position-fixed sticky-bottom end-0 m-2 hover-nav"
             id="hover-nav-option">
             <img src="/sources/images/Account.png" alt="account-nav">
             <img src="/sources/images/Upload.png" alt="upload-nav">
             <img src="/sources/images/Search.png" alt="search-nav">
             <img src="/sources/images/close.png" alt="close-nav">
         </div>
-        <div class="navIcon-fluid hover-nav position-fixed sticky-bottom end-0 m-2" id="hover-nav">
-            <img src="/sources/images/nav.png" alt="nav-icon">
+        <div class="navIcon-fluid hover-nav position-fixed sticky-bottom end-0 m-2 d-none" id="hover-nav">
+            <a href="/index.html">
+            <img src="/sources/images/nav.png" alt="nav-icon" class="hover-nav">
+            </a>
         </div>
 
 
-        <div class="dropup-center dropup position-fixed sticky-bottom">
-            <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+        <div class="dropup-center dropup position-fixed sticky-bottom end-0 m-2">
+            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                <img src="/sources/images/close.png" alt="close-nav">
+                <img src="/sources/images/nav.png" alt="nav-icon" class="hover-nav">
             </button>
-            <ul class="dropdown-menu bg-danger-border-subtle">
-                <li><a class="dropdown-item" href="#"><img src="/sources/images/Account.png" alt="account-nav"></a></li>
-                <li><a class="dropdown-item" href="#"><img src="/sources/images/Upload.png" alt="upload-nav"></a></li>
-                <li><a class="dropdown-item" href="#"><img src="/sources/images/Search.png" alt="search-nav"></a></li>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><img src="/sources/images/Account.png" alt="account-nav" class="hover-nav"></a></li>
+                <li><a class="dropdown-item" href="#"><img src="/sources/images/Upload.png" alt="upload-nav" class="hover-nav"></a></li>
+                <li><a class="dropdown-item" href="#"><img src="/sources/images/Search.png" alt="search-nav" class="hover-nav"></a></li>
             </ul>
         </div>
     </header>
