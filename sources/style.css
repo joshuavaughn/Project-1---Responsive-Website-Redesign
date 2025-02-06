@@ -75,3 +75,18 @@ body {
     background-color: rgba(147, 0, 0, 0) !important; 
     scale: 107%;
 }
+
+.dropdown {
+    border: none;
+    background-color: #d6363300;
+}
+
+.dropdown-option {
+    display: flex;
+    justify-content: end;
+    padding-right: 1em;
+}
+
+.hover-nav > img:hover {
+    scale: 120%;
+}
