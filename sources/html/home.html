@@ -21,29 +21,34 @@
 
 <body>
     <header>
-        <div class="nav-fluid d-none flex-column position-fixed sticky-bottom end-0 m-2 hover-nav"
-            id="hover-nav-option">
-            <img src="/sources/images/Account.png" alt="account-nav">
-            <img src="/sources/images/Upload.png" alt="upload-nav">
-            <img src="/sources/images/Search.png" alt="search-nav">
-            <img src="/sources/images/close.png" alt="close-nav">
-        </div>
-        <div class="navIcon-fluid hover-nav position-fixed sticky-bottom end-0 m-2 d-none" id="hover-nav">
-            <a href="/index.html">
-            <img src="/sources/images/nav.png" alt="nav-icon" class="hover-nav">
-            </a>
-        </div>
-
-
         <div class="dropup-center dropup position-fixed sticky-bottom end-0 m-2">
-            <button class="dropdown" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+            <button class="dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="/sources/images/nav.png" alt="nav-icon" class="hover-nav">
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-option" href="#"><img src="/sources/images/Account.png" alt="account-nav" class="hover-nav"></a></li>
-                <li><a class="dropdown-option" href="#"><img src="/sources/images/Upload.png" alt="upload-nav" class="hover-nav"></a></li>
-                <li><a class="dropdown-option" href="#"><img src="/sources/images/Search.png" alt="search-nav" class="hover-nav"></a></li>
+
+                <li class="dropdown-option" id="nav-account">
+                    <a href="/sources/html/account.html">
+                        <img src="/sources/images/Account.png" alt="account-nav" class="hover-nav">
+                    </a>
+                </li>
+
+                <li class="dropdown-option">
+                    <!-- Button search modal -->
+                    <button class="button-option" data-bs-toggle="modal" data-bs-target="#search">
+                        <img src="/sources/images/Search.png" alt="search-nav" class="hover-nav">
+                    </button>
+                </li>
+
+                <li class="dropdown-option">
+                    <!-- Button upload modal -->
+                    <button class="button-option" data-bs-toggle="modal" data-bs-target="#upload">
+                        <img src="/sources/images/Upload.png" alt="upload-nav" class="hover-nav">
+                    </button>
+                </li>
+
+
+
             </ul>
         </div>
     </header>
@@ -53,15 +58,137 @@
         <div class="container-fluid d-flex flex-wrap justify-content-evenly p-2 gap-2">
             <img src="https://i.pinimg.com/736x/90/54/c9/9054c9d1c125fe8d48b457694d325003.jpg" alt="cat1" class="image">
             <img src="https://i.pinimg.com/736x/d9/e2/b7/d9e2b7000d7d4db9c8261a464aa49b28.jpg" alt="cat8" class="image">
-            <img src="https://i.pinimg.com/736x/87/4d/13/874d13b8054c00b892314ce586636087.jpg" alt="cat2" class="image">
+            <img src="https://i.pinimg.com/736x/1c/33/83/1c3383e3dbf9509fe2d6ed87a182be51.jpg" alt="cat2" class="image">
             <img src="https://i.pinimg.com/736x/44/73/2f/44732f3e0db05de6d409ded8def6c5df.jpg" alt="cat3" class="image">
             <img src="https://i.pinimg.com/736x/bd/b0/64/bdb064e84684b5187c4c8c0043b39d6d.jpg" alt="cat7" class="image">
             <img src="https://i.pinimg.com/736x/b5/7e/a2/b57ea27a8a99395a6ae844ca77d18f60.jpg" alt="cat4" class="image">
             <img src="https://i.pinimg.com/736x/00/ff/ce/00ffceb11c393f43ab38ef8fcd2fb742.jpg" alt="cat9" class="image">
-            <img src="https://i.pinimg.com/736x/ee/00/20/ee0020e9d7586708083aecdb77be6293.jpg" alt="cat5" class="image">
+            <img src="https://i.pinimg.com/736x/e3/75/64/e37564d3dd3b63b3a39f432758dbfac1.jpg" alt="cat5" class="image">
             <img src="https://i.pinimg.com/736x/b2/b6/c3/b2b6c368bd06625b76e7dbea7f4164a3.jpg" alt="cat6" class="image">
+            <img src="https://i.pinimg.com/736x/53/77/9d/53779de34c59d0a0b8184bd0f0cd3097.jpg" alt="cat10"
+                class="image">
+            <img src="https://i.pinimg.com/736x/5b/ec/c7/5becc70cc98a7fbf730eb3eb12d8fc16.jpg" alt="cat11"
+                class="image">
+            <img src="https://i.pinimg.com/736x/c3/b4/53/c3b453d0339b0a06b7917367203b95d0.jpg" alt="cat12"
+                class="image">
+            <img src="https://i.pinimg.com/736x/a1/14/30/a114305cb90d0bd4460f345da1660218.jpg" alt="cat13"
+                class="image">
+            <img src="https://i.pinimg.com/736x/53/fe/d1/53fed15d25b9308613788977fca0d509.jpg" alt="cat14"
+                class="image">
+            <img src="https://i.pinimg.com/736x/00/ff/ce/00ffceb11c393f43ab38ef8fcd2fb742.jpg" alt="cat6" class="image">
+            <img src="https://i.pinimg.com/736x/bd/b0/64/bdb064e84684b5187c4c8c0043b39d6d.jpg" alt="cat7" class="image">
+            <img src="https://i.pinimg.com/736x/b5/7e/a2/b57ea27a8a99395a6ae844ca77d18f60.jpg" alt="cat4" class="image">
+            <img src="https://i.pinimg.com/736x/87/4d/13/874d13b8054c00b892314ce586636087.jpg" alt="cat9" class="image">
+            <img src="https://i.pinimg.com/736x/e3/75/64/e37564d3dd3b63b3a39f432758dbfac1.jpg" alt="cat5" class="image">
+            <img src="https://i.pinimg.com/736x/b2/b6/c3/b2b6c368bd06625b76e7dbea7f4164a3.jpg" alt="cat6" class="image">
+            <img src="https://i.pinimg.com/736x/d9/e2/b7/d9e2b7000d7d4db9c8261a464aa49b28.jpg" alt="cat8" class="image">
+            <img src="https://i.pinimg.com/736x/1c/33/83/1c3383e3dbf9509fe2d6ed87a182be51.jpg" alt="cat2" class="image">
+            <img src="https://i.pinimg.com/736x/44/73/2f/44732f3e0db05de6d409ded8def6c5df.jpg" alt="cat3" class="image">
+            <img src="https://i.pinimg.com/736x/bd/b0/64/bdb064e84684b5187c4c8c0043b39d6d.jpg" alt="cat7" class="image">
+            <img src="https://i.pinimg.com/736x/b5/7e/a2/b57ea27a8a99395a6ae844ca77d18f60.jpg" alt="cat4" class="image">
+            <img src="https://i.pinimg.com/736x/5b/ec/c7/5becc70cc98a7fbf730eb3eb12d8fc16.jpg" alt="cat11"
+                class="image">
+            <img src="https://i.pinimg.com/736x/c3/b4/53/c3b453d0339b0a06b7917367203b95d0.jpg" alt="cat12"
+                class="image">
+            <img src="https://i.pinimg.com/736x/a1/14/30/a114305cb90d0bd4460f345da1660218.jpg" alt="cat13"
+                class="image">
+            <img src="https://i.pinimg.com/736x/53/fe/d1/53fed15d25b9308613788977fca0d509.jpg" alt="cat14"
+                class="image">
+            <img src="https://i.pinimg.com/736x/87/4d/13/874d13b8054c00b892314ce586636087.jpg" alt="cat6" class="image">
+            <img src="https://i.pinimg.com/736x/e3/75/64/e37564d3dd3b63b3a39f432758dbfac1.jpg" alt="cat5" class="image">
+            <img src="https://i.pinimg.com/736x/b2/b6/c3/b2b6c368bd06625b76e7dbea7f4164a3.jpg" alt="cat6" class="image">
+            <img src="https://i.pinimg.com/736x/d9/e2/b7/d9e2b7000d7d4db9c8261a464aa49b28.jpg" alt="cat8" class="image">
+            <img src="https://i.pinimg.com/736x/1c/33/83/1c3383e3dbf9509fe2d6ed87a182be51.jpg" alt="cat2" class="image">
+            <img src="https://i.pinimg.com/736x/44/73/2f/44732f3e0db05de6d409ded8def6c5df.jpg" alt="cat3" class="image">
         </div>
     </main>
+
+    <!-- search & upload -->
+    <section>
+        <!-- search -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <div class="col-2">
+                            <img src="/sources/images/searchRed.png" alt="searchRed" style="height: auto; width: 2.3em;">
+                        </div>
+                        <div class="col-8 container-fluid">
+                            <input class="form-control form-control-lg" type="text" placeholder="search here..." aria-label=".form-control-lg example">
+                        </div>
+
+                        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Search now</h1> -->
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row-fluid d-flex justify-content-center">
+                            <img src="/sources/images/searchBlack.png" alt="searchBlack">
+                        </div>
+                        <div class="row text-center">
+                            <p>searching the database for matching result...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section>
+            <div class="container-fluid bg-danger p-4 m-2 shadow rounded-3" style="width: 40vw;">
+                <div class="row bg-light d-flex justify-content-center align-items-center">
+                    <div class="col-2">
+                        <img src="/sources/images/searchRed.png" alt="searchRed">
+                    </div>
+                    <div class="col-8">
+                        <input type="text" placeholder="Search here...">
+                    </div>
+                    <div class="col-2">
+                        <img src="/sources/images/Plus.png" alt="Plus">
+                    </div>
+                </div>
+                <hr>
+                <div class="row-fluid d-flex justify-content-center">
+                    <img src="/sources/images/searchBlack.png" alt="searchBlack">
+                </div>
+                <div class="row text-center">
+                    <p>searching the database for matching result...</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- upload -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="upload" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">upload now</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- footer -->
     <footer class="">
