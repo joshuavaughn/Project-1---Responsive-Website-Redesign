@@ -55,8 +55,13 @@
 
     <!-- pictures -->
     <main>
+        <!-- images -->
         <div class="container-fluid d-flex flex-wrap justify-content-evenly p-2 gap-2">
-            <img src="https://i.pinimg.com/736x/90/54/c9/9054c9d1c125fe8d48b457694d325003.jpg" alt="cat1" class="image">
+            <!-- Button search modal -->
+            <button class="button-option" data-bs-toggle="modal" data-bs-target="#post">
+                <img src="https://i.pinimg.com/736x/90/54/c9/9054c9d1c125fe8d48b457694d325003.jpg" alt="cat1" class="image">
+            </button>
+
             <img src="https://i.pinimg.com/736x/d9/e2/b7/d9e2b7000d7d4db9c8261a464aa49b28.jpg" alt="cat8" class="image">
             <img src="https://i.pinimg.com/736x/1c/33/83/1c3383e3dbf9509fe2d6ed87a182be51.jpg" alt="cat2" class="image">
             <img src="https://i.pinimg.com/736x/44/73/2f/44732f3e0db05de6d409ded8def6c5df.jpg" alt="cat3" class="image">
@@ -100,6 +105,39 @@
             <img src="https://i.pinimg.com/736x/d9/e2/b7/d9e2b7000d7d4db9c8261a464aa49b28.jpg" alt="cat8" class="image">
             <img src="https://i.pinimg.com/736x/1c/33/83/1c3383e3dbf9509fe2d6ed87a182be51.jpg" alt="cat2" class="image">
             <img src="https://i.pinimg.com/736x/44/73/2f/44732f3e0db05de6d409ded8def6c5df.jpg" alt="cat3" class="image">
+        </div>
+
+        <!-- posts -->
+        <!-- Modal -->
+        <div class="modal fade" id="post" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content ">
+                    <div class="modal-header d-flex flex-column">
+                        <div class="row-fluid">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="row-fluid d-flex">
+                            <div class="col-2">
+                                <img src="/sources/images/profileIcon.png" alt="profileIcon">
+                            </div>
+                            <div class="col-6">
+                                <h3>Max Tennyson</h3>
+                                <small>3 days ago</small>
+                            </div>
+                            <div class="col-4">
+                                <img src="/sources/images/bookmark_filled.png" alt="bookmark_filled">
+                                <img src="/sources/images/share-solid 1.png" alt="share-solid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <a class="btn btn-danger" href="/sources/html/home.html" role="button">Related Content</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -156,7 +194,7 @@
                             <h2>Upload Here</h2>
                         </div>
                         <!-- drag files -->
-                        <div class="row p-3 text-center" >
+                        <div class="row p-3 text-center">
                             <p>You can drag and drop files in the sace below</p>
                             <div class="bg-dark-subtle border border-dark p-5 mb-2">
                                 <p>You can drag and drop files here or</p>
@@ -170,12 +208,14 @@
                                     <label for="title" class="col-form-label">Title</label>
                                 </div>
                                 <div class="col-auto">
-                                    <input type="input" id="title" class="form-control" placeholder="post title here...">
+                                    <input type="input" id="title" class="form-control"
+                                        placeholder="post title here...">
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <label for="caption" class="form-label">Caption</label>
-                                <textarea class="form-control" id="caption" rows="3" placeholder="caption here..."></textarea>
+                                <textarea class="form-control" id="caption" rows="3"
+                                    placeholder="caption here..."></textarea>
                             </div>
                         </div>
                     </div>
