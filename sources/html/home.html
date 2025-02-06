@@ -106,8 +106,6 @@
     <!-- search & upload -->
     <section>
         <!-- search -->
-
-
         <!-- Modal -->
         <div class="modal fade" id="search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -115,10 +113,12 @@
 
                     <div class="modal-header">
                         <div class="col-2">
-                            <img src="/sources/images/searchRed.png" alt="searchRed" style="height: auto; width: 2.3em;">
+                            <img src="/sources/images/searchRed.png" alt="searchRed"
+                                style="height: auto; width: 2.3em;">
                         </div>
                         <div class="col-8 container-fluid">
-                            <input class="form-control form-control-lg" type="text" placeholder="search here..." aria-label=".form-control-lg example">
+                            <input class="form-control form-control-lg" type="text" placeholder="search here..."
+                                aria-label=".form-control-lg example">
                         </div>
 
                         <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Search now</h1> -->
@@ -138,52 +138,50 @@
             </div>
         </div>
 
-
-
-        <section>
-            <div class="container-fluid bg-danger p-4 m-2 shadow rounded-3" style="width: 40vw;">
-                <div class="row bg-light d-flex justify-content-center align-items-center">
-                    <div class="col-2">
-                        <img src="/sources/images/searchRed.png" alt="searchRed">
-                    </div>
-                    <div class="col-8">
-                        <input type="text" placeholder="Search here...">
-                    </div>
-                    <div class="col-2">
-                        <img src="/sources/images/Plus.png" alt="Plus">
-                    </div>
-                </div>
-                <hr>
-                <div class="row-fluid d-flex justify-content-center">
-                    <img src="/sources/images/searchBlack.png" alt="searchBlack">
-                </div>
-                <div class="row text-center">
-                    <p>searching the database for matching result...</p>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
         <!-- upload -->
-
-
         <!-- Modal -->
         <div class="modal fade" id="upload" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
+
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">upload now</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
+
                     <div class="modal-body">
-                        ...
+                        <!-- close button -->
+                        <div class="row d-flex justify-content-end me-2">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- header -->
+                        <div class="row-fluid d-flex flex-column align-items-center gap-3">
+                            <img src="/sources/images/uploadIcon.png" alt="uploadIcon">
+                            <h2>Upload Here</h2>
+                        </div>
+                        <!-- drag files -->
+                        <div class="row p-3 text-center" >
+                            <p>You can drag and drop files in the sace below</p>
+                            <div class="bg-dark-subtle border border-dark p-5 mb-2">
+                                <p>You can drag and drop files here or</p>
+                                <a href="#" id="browse-upload">Browse</a>
+                            </div>
+                        </div>
+                        <!-- caption form -->
+                        <div class="row-fluid p-3">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-auto">
+                                    <label for="title" class="col-form-label">Title</label>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="input" id="title" class="form-control" placeholder="post title here...">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="caption" class="form-label">Caption</label>
+                                <textarea class="form-control" id="caption" rows="3" placeholder="caption here..."></textarea>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+
+                    <div class="modal-footer d-flex justify-content-center">
+                        <a class="btn btn-danger" href="/sources/html/account.html" role="button">Pin Now!</a>
                     </div>
                 </div>
             </div>
