@@ -19,6 +19,15 @@ body {
     /* background-color: #D63633; */
 }
 
+.footer-images:hover {
+    scale: 120%;
+}
+
+.icon {
+    height: auto;
+    width: 2em;
+}
+
 #hero-page {
     height: 100vh;
 }
@@ -31,7 +40,7 @@ body {
 
 #hero-page-logo {
     height: auto;
-    width: 5vw;
+    width: 10vw;
 }
 
 /* floating nav */
