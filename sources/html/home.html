@@ -17,6 +17,12 @@
 
     <!-- style.css -->
     <link rel="stylesheet" href="/sources/style.css">
+
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -59,7 +65,8 @@
         <div class="container-fluid d-flex flex-wrap justify-content-evenly p-2 gap-2">
             <!-- Button search modal -->
             <button class="button-option" data-bs-toggle="modal" data-bs-target="#post">
-                <img src="https://i.pinimg.com/736x/90/54/c9/9054c9d1c125fe8d48b457694d325003.jpg" alt="cat1" class="image">
+                <img src="https://i.pinimg.com/736x/90/54/c9/9054c9d1c125fe8d48b457694d325003.jpg" alt="cat1"
+                    class="image" id="modal-image">
             </button>
 
             <img src="https://i.pinimg.com/736x/d9/e2/b7/d9e2b7000d7d4db9c8261a464aa49b28.jpg" alt="cat8" class="image">
@@ -109,29 +116,45 @@
 
         <!-- posts -->
         <!-- Modal -->
-        <div class="modal fade" id="post" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content ">
-                    <div class="modal-header d-flex flex-column">
-                        <div class="row-fluid">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="row-fluid d-flex">
-                            <div class="col-2">
-                                <img src="/sources/images/profileIcon.png" alt="profileIcon">
-                            </div>
-                            <div class="col-6">
-                                <h3>Max Tennyson</h3>
-                                <small>3 days ago</small>
-                            </div>
-                            <div class="col-4">
-                                <img src="/sources/images/bookmark_filled.png" alt="bookmark_filled">
-                                <img src="/sources/images/share-solid 1.png" alt="share-solid">
-                            </div>
-                        </div>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="post" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content ">
+                    <div class="modal-header d-flex flex-column align-items-start">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="row-fluid d-flex jusify-content-start ms-3">
+                            <div class="col-2 me-4">
+                                <img src="/sources/images/profileIcon.png" alt="profileIcon" style="height: 4em;">
+                            </div>
+                            <div class="col-7">
+                                <h4 class="">Max Tennyson</h4>
+                                <p style="margin-top: -0.5em;">3 days ago</p>
+                            </div>
+                            <div class="col-3 d-flex" id="post-buttons">
+                                <img src="/sources/images/bookmark_filled.png" alt="bookmark_filled" style="height: 3em;">
+                                <img src="/sources/images/share-solid 1.png" alt="share-solid" style="height: 3em;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center">
+                        <img src="https://i.pinimg.com/736x/90/54/c9/9054c9d1c125fe8d48b457694d325003.jpg" alt="cat1" class="image shadow">
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
                         <a class="btn btn-danger" href="/sources/html/home.html" role="button">Related Content</a>
@@ -229,39 +252,64 @@
     </section>
 
     <!-- footer -->
-    <footer class="">
-        <section class="container-fluid p-4 bg-primary" id="footer">
-            <div class="row">
+    <footer class="text-light">
+        <section class="container-fluid p-4 bg-primary " id="footer">
+            <div class="row fw-bolder">
                 <h1>Pinterest</h1>
             </div>
+            <br>
             <div class="row-fluid d-flex">
-                <div class="col-7 d-flex">
-                    <div class="col-4">about</div>
-                    <div class="col-4">thank you</div>
-                    <div class="col-4">people ref</div>
+                <div class="col-md-7 d-flex flex-wrap gap-3 pe-4">
+                    <div class="col-md">
+                        <p class="fw-bolder">About</p>
+                        <p>A place to discover, collect, and share inspiration. Save your favorite ideas, organize them
+                            into boards, and explore endless creativity—all in one space.</p>
+                    </div>
+                    <div class="col-md">
+                        <p class="fw-bolder">Thank you</p>
+                        <p>Thank you, Base 404, for helping me level up my web dev skills! Grateful for the guidance and
+                            support.</p>
+                    </div>
+                    <div class="col-md">
+                        <p class="fw-bolder">People Reference</p>
+                        <p>Vaughn Joshua B. Barit</p>
+                    </div>
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                     <p>Moto</p>
                     <h3>Pin what you love, share what inspires!</h3>
                 </div>
             </div>
             <hr>
-            <div class="row-fluid d-flex">
-                <div class="col-9 d-flex">
-                    <div class="col-2">Cookies</div>
-                    <div class="col-2">Terms</div>
-                    <div class="col-2">Privacy</div>
+            <div class="row-fluid d-flex gap-5">
+                <div class="col-9 d-flex gap-4 pe-4 flex-wrap">
+                    <div>Cookies</div>
+                    <div>Terms</div>
+                    <div>Privacy</div>
                 </div>
-                <div class="col-3 d-flex gap-3">
-                    <img src="" alt="Github">
-                    <img src="" alt="Instagram">
-                    <img src="" alt="Tiktok">
-                    <img src="" alt="Pinterest">
+                <div class="col-2 d-flex flex-wrap gap-3">
+                    <a href="https://github.com/joshuavaughn/Project-1---Responsive-Website-Redesign.git"
+                        target="_blank" class="footer-images">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" class="icon">
+                    </a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank" class="footer-images">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png"
+                            alt="Instagram" class="icon">
+                    </a>
+                    <a href="https://www.tiktok.com/login" target="_blank" class="footer-images">
+                        <img src="https://static-00.iconduck.com/assets.00/tiktok-icon-1890x2048-ihin0vop.png"
+                            alt="Tiktok" class="icon">
+                    </a>
+                    <a href="https://ph.pinterest.com/" target="_blank" class="footer-images">
+                        <img src="/sources/images/pinterest logo.png" alt="Pinterest"
+                            class="icon bg-light rounded-circle border border-2">
+                    </a>
                 </div>
             </div>
             <br>
             <div class="row-fluid">
-                <img src="" alt="Bye icon">
+                <img src="https://symbl-world.akamaized.net/i/webp/40/04aa0ab6fb0768634cfbdae78668b4.webp"
+                    alt="Bye icon" style="width: auto; height: 4em;">
                 <h1>Thank You for visiting!</h1>
             </div>
         </section>
