@@ -106,6 +106,13 @@ body {
 
 /* account */
 #account-header {
-    background-image: url(/sources/images/crumpled-paper.png);
-    background-size: 99vw auto;
+    background-image: url(/sources/images/account-crumpled-paper.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 60vh;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.margin-left {
+    margin-left: 10%;
 }

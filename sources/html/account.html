@@ -43,18 +43,139 @@
     </header>
 
     <main>
+        <!-- account header -->
         <section id="account-header">
-            <div class="row-fluid d-flex">
-                <img src="/sources/images/profileIcon.png" alt="icon">
+            <div class="row-fluid d-flex align-items-end ps-5 gap-4" style="height: 70%;">
+                <img src="/sources/images/profileIcon.png" alt="icon" style="height: 40%;">
                 <div>
-                    <h1>Kevin E. Levin</h1>
-                    <p>Pin what you love, share what inspires!</p>
+                    <h1 class="display-2 fw-bold">Kevin E. Levin</h1>
+                    <h3 class="fw-light">Pin what you love, share what inspires!</h3>
                 </div>
-                <img src="/sources/images/Edit.png" alt="edit">
+                <img src="/sources/images/Edit.png" alt="edit" style="height: 2em;" class="mb-5">
+            </div>
+            <div class="row-fluid mt-4 ps-5">
+                <!-- Button upload modal -->
+                <a class="btn btn-danger px-4 py-2 margin-left " data-bs-toggle="modal" data-bs-target="#upload"
+                    href="/sources/html/home.html" role="button">
+                    <h5>Pin Now!</h5>
+                </a>
+            </div>
+        </section>
+
+        <!-- post -->
+        <section>
+            <div class="row-fluid d-flex justify-content-evenly mt-3">
+                <h4>Post</h4>
+                <h4>Pinned</h4>
+                <h4>Tagged</h4>
+            </div>
+            <div class="container-fluid d-flex justify-content-center flex-wrap gap-3 p-3 my-4" id="post">
+                <button class="button-option" data-bs-toggle="modal" data-bs-target="#post">
+                    <img src="https://placehold.co/400x300/EEE/31343C" alt="post">
+                </button>
+                <button class="button-option" data-bs-toggle="modal" data-bs-target="#post">
+                    <img src="https://placehold.co/400x300/EEE/31343C" alt="post">
+                </button>
+                <button class="button-option" data-bs-toggle="modal" data-bs-target="#post">
+                    <img src="https://placehold.co/400x300/EEE/31343C" alt="post">
+                </button>
+                <button class="button-option" data-bs-toggle="modal" data-bs-target="#post">
+                    <img src="https://placehold.co/400x300/EEE/31343C" alt="post">
+                </button>
+                <button class="button-option" data-bs-toggle="modal" data-bs-target="#post">
+                    <img src="https://placehold.co/400x300/EEE/31343C" alt="post">
+                </button>
+                <button class="button-option" data-bs-toggle="modal" data-bs-target="#post">
+                    <img src="https://placehold.co/400x300/EEE/31343C" alt="post">
+                </button>
+            </div>
+        </section>
+
+        <!-- modals -->
+        <section>
+            <!-- upload -->
+            <!-- Modal -->
+            <div class="modal fade" id="upload" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+                            <!-- close button -->
+                            <div class="row d-flex justify-content-end me-2">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <!-- header -->
+                            <div class="row-fluid d-flex flex-column align-items-center gap-3">
+                                <img src="/sources/images/uploadIcon.png" alt="uploadIcon">
+                                <h2>Upload Here</h2>
+                            </div>
+                            <!-- drag files -->
+                            <div class="row p-3 text-center">
+                                <p>You can drag and drop files in the sace below</p>
+                                <div class="bg-dark-subtle border border-dark p-5 mb-2">
+                                    <p>You can drag and drop files here or</p>
+                                    <a href="#" id="browse-upload">Browse</a>
+                                </div>
+                            </div>
+                            <!-- caption form -->
+                            <div class="row-fluid p-3">
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-auto">
+                                        <label for="title" class="col-form-label">Title</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input type="input" id="title" class="form-control"
+                                            placeholder="post title here...">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="caption" class="form-label">Caption</label>
+                                    <textarea class="form-control" id="caption" rows="3"
+                                        placeholder="caption here..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a class="btn btn-danger" href="/sources/html/account.html" role="button">Pin Now!</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <!-- posts -->
+            <!-- Modal -->
+            <div class="modal fade" id="post" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content ">
+                        <div class="modal-header d-flex flex-column align-items-start">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="row-fluid d-flex jusify-content-start ms-3">
+                                <div class="col-2 me-4">
+                                    <img src="/sources/images/profileIcon.png" alt="profileIcon" style="height: 4em;">
+                                </div>
+                                <div class="col-7">
+                                    <h4 class="">Max Tennyson</h4>
+                                    <p style="margin-top: -0.5em;">3 days ago</p>
+                                </div>
+                                <div class="col-3 d-flex" id="post-buttons">
+                                    <img src="/sources/images/bookmark_filled.png" alt="bookmark_filled" style="height: 3em;">
+                                    <img src="/sources/images/share-solid 1.png" alt="share-solid" style="height: 3em;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center">
+                            <img src="https://placehold.co/400x300/EEE/31343C" alt="cat1" class="image shadow">
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a class="btn btn-danger" href="/sources/html/home.html" role="button">Related Content</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section></section>
     </main>
 
     <!-- footer -->
