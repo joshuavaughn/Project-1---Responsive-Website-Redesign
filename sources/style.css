@@ -116,3 +116,7 @@ body {
 .margin-left {
     margin-left: 10%;
 }
+
+.account-post:hover {
+    scale: 110%;
+}
