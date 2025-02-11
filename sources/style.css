@@ -48,13 +48,15 @@ body {
 
 #hero-page {
     background-image: url(/sources/images/crumpled-paper.png);
-    background-size: 99vw auto;
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+
 }
 
 /* floating nav */
 .hover-nav {
     height: auto;
-    width:3vw;
+    width:40px;
 }
 
 .hover-nav:hover {
@@ -89,7 +91,8 @@ body {
 /* home */
 .image {
     width: auto;
-    height: 20vw;
+    max-height: 250px;
+    min-height: 150px;
 }
 
 #modal-image:hover {
@@ -124,7 +127,8 @@ body {
 /* dark */
 #dark-hero-page {
     background-image: url(/sources/images/dark-crumpled-paper.png);
-    background-size: 99vw auto;
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
 }
 
 .account-details:hover {
