@@ -118,7 +118,7 @@ body {
 }
 
 .account-post:hover {
-    scale: 110%;
+    scale: 105%;
 }
 
 /* dark */
@@ -131,10 +131,11 @@ body {
     scale: 105%;
 }
 
-#darl-account-header {
+#dark-account-header {
     background-image: url(/sources/images/dark-account-crumpled-paper.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
     height: 60vh;
-    border-bottom: 1px solid #cfcfcf;
+    border-bottom: 1px solid #3d3d3d;
 }
+
